@@ -33,5 +33,7 @@ const books = [
   let userBooks = books.filter((item) =>  item.genre === "History")
 
   userBooks = books.filter((item) => item.publish >= 1995 && item.genre === "History").map((item) => item.publish)
+  // userBooks = books.filter(i => i.genre === "Science")
+  userBooks = books.map(i => i.genre)
   console.log(userBooks);
   
